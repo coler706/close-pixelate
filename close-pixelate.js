@@ -63,8 +63,8 @@ ClosePixelation.prototype.render = function( options ) {
   var w = this.width = this.canvas.width = this.img.width
   var h = this.height = this.canvas.height = this.img.height
   // draw image on canvas
-  this.img.src= this.img.src + '?' + new Date().getTime();
-  this.img.setAttribute('crossOrigin', 'anonymous');
+  this.img.src = this.img.src + '?' + new Date().getTime();
+this.img.setAttribute('crossOrigin', 'anonymous');
   this.ctx.drawImage( this.img, 0, 0 )
   // get imageData
 
